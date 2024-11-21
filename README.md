@@ -5,6 +5,9 @@ with *Bitbucket* or *GitHub* to build a simple python app that uses *poetry* for
 package management. It will build this app into a docker container and deploy it
 to *ECR* (Elastic Container Registry), following a versioning schema with *git tags*.
 
+![](images/Project_diagram.png)
+> Project diagram
+
 ## Terraform ##
 
 > Remember to change variables in the `variables.tf`, `buildspec.yml`, and module files.
