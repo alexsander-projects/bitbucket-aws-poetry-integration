@@ -47,3 +47,9 @@ variable "server_type" {
     type        = string
     default     = "<>"
 }
+
+variable "repository_source" {
+    description = "The source of the repository, e.g. GITHUB, BITBUCKET, CODECOMMIT, GITHUB_ENTERPRISE...."
+    type        = string
+    default     = "<>"
+}
