@@ -39,6 +39,30 @@ To authenticate with Bitbucket or GitHub, you need to create a personal access t
 > It's really important to follow the `principle of least privilege`, so make sure to
 > give the token only the necessary permissions. You will need the `admin:repo_hook` permission.
 
+## Python app ##
+
+The python app is a simple function that returns the current date and time, using 
+poetry for package management.
+
+`packages/invoketime.py`:
+```python
+# this contains the packages that are used in the project
+
+import time
+
+def invoke_time():
+    return time.ctime()
+```
+
+`main.py`:
+```python
+# this is the main file that will be executed, it imports the function from the packages
+from packages.invoketime import invoke_time
+
+if __name__ == "__main__":
+    print(invoke_time());
+```
+
 ## Setting up ##
 
 * Getting started
